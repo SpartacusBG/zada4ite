@@ -1,0 +1,131 @@
+<html>
+
+
+<head>
+
+	<style>
+
+	table, tr, td{
+		border:1px solid black;
+		padding:5px;
+	}
+
+
+	</style>
+
+</head>
+
+<body>
+
+<table >
+
+<tr>
+	<td>i</td>
+	<td>v</td>
+	<td>a</td>
+	<td>n</td>
+	
+
+
+</tr>
+<tr>
+	<td>e</td>
+	<td>v</td>
+	<td>n</td>
+	<td>h</td>
+	
+
+
+</tr>
+<tr>
+	<td>i</td>
+	<td>n</td>
+	<td>a</td>
+	<td>v</td>
+	
+
+
+</tr>
+<tr>
+	<td>m</td>
+	<td>v</td>
+	<td>v</td>
+	<td>n</td>
+	
+
+
+</tr>
+<tr>
+	<td>q</td>
+	<td>r</td>
+	<td>i</td>
+	<td>t</td>
+	
+
+
+</tr>
+
+</table>
+
+
+
+
+
+<script>
+
+
+
+
+function searchForIvan(){
+     
+     var tableRow = document.getElementsByTagName("tr");
+
+     for( var i = 0; i < tableRow.length; i++ ){
+
+
+            
+     	if( tableRow[i].getElementsByTagName("td")[0].innerHTML === 'i' && tableRow[i + 1].getElementsByTagName("td")[0].innerHTML === 'v' && tableRow[i + 2].getElementsByTagName("td")[0].innerHTML === 'a' && tableRow[i + 3].getElementsByTagName("td")[0].innerHTML === 'n'){
+     		console.log('we got him');
+
+     		
+     	}
+    	if( tableRow[i].getElementsByTagName("td")[1].innerHTML === 'i' && tableRow[i + 1].getElementsByTagName("td")[1].innerHTML === 'v' && tableRow[i + 2].getElementsByTagName("td")[1].innerHTML === 'a' && tableRow[i + 3].getElementsByTagName("td")[1].innerHTML === 'n'){
+     		console.log('we got him');
+
+     		
+     	}
+     		
+     }
+
+     	var tableData = document.getElementsByTagName( 'td' );
+     //	var len = tableData.length;
+     	   for( var j = 0; j < tableData.length; j++ ){
+
+     	   	    
+     	   	    if( tableData[ j ].innerHTML === 'i' && tableData[ j + 1  ].innerHTML === 'v' && tableData[ j +2 ].innerHTML === 'a' && tableData[ j + 3 ].innerHTML === 'n'){
+     	   	    	console.log( 'we have Ivan' );
+
+     	   	    }
+
+     	   	    }
+
+
+                  for( var a = len; a >= 0; a-- ){
+
+
+     	   	            if( tableData[ a ].innerHTML === 'i' ){
+     	   	    	       console.log( 'we have Ivan' );
+
+     	   	    }
+
+     	   	    }
+
+
+     }
+
+
+
+
+searchForIvan();</script>
+</body>
+</html>
